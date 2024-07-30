@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Work\\source\\mine\\FastColoredTextBox\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6DD14A85-CCFC-4774-BD26-0F5772512319}|FastColoredTextBox\\FastColoredTextBox.csproj|e:\\work\\source\\mine\\fastcoloredtextbox\\fastcoloredtextbox\\syntaxhighlighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DD14A85-CCFC-4774-BD26-0F5772512319}|FastColoredTextBox\\FastColoredTextBox.csproj|solutionrelative:fastcoloredtextbox\\syntaxhighlighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SyntaxHighlighter.cs",
+              "DocumentMoniker": "E:\\Work\\source\\mine\\FastColoredTextBox\\FastColoredTextBox\\SyntaxHighlighter.cs",
+              "RelativeDocumentMoniker": "FastColoredTextBox\\SyntaxHighlighter.cs",
+              "ToolTip": "E:\\Work\\source\\mine\\FastColoredTextBox\\FastColoredTextBox\\SyntaxHighlighter.cs",
+              "RelativeToolTip": "FastColoredTextBox\\SyntaxHighlighter.cs",
+              "ViewState": "AQIAAGcFAAAAAAAAAAAQwHcFAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T13:18:01.854Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
