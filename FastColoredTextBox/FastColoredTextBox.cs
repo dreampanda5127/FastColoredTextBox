@@ -7323,12 +7323,12 @@ namespace FastColoredTextBoxNS
 
         private void InitializeComponent()
         {
-            SuspendLayout();
+            this.SuspendLayout();
             // 
             // FastColoredTextBox
             // 
-            Name = "FastColoredTextBox";
-            ResumeLayout(false);
+            this.Name = "FastColoredTextBox";
+            this.ResumeLayout(false);
         }
 
         /// <summary>
@@ -8313,8 +8313,9 @@ window.status = ""#print"";
                 Console.WriteLine(ex.Message);
             }
         }
-    }
-    
+
+     }
+
     public class PaintLineEventArgs : PaintEventArgs
     {
         public PaintLineEventArgs(int iLine, Rectangle rect, Graphics gr, Rectangle clipRect) : base(gr, clipRect)

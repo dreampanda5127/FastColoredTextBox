@@ -36,6 +36,7 @@ namespace Tester
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.findToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.replaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.setSelectedAsReadonlyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setSelectedAsWritableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,7 +81,7 @@ namespace Tester
             this.miChangeColors = new System.Windows.Forms.ToolStripMenuItem();
             this.changeHotkeysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fctb = new FastColoredTextBoxNS.FastColoredTextBox();
-            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.managementSellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fctb)).BeginInit();
             this.SuspendLayout();
@@ -106,6 +107,7 @@ namespace Tester
             this.findToolStripMenuItem,
             this.replaceToolStripMenuItem,
             this.toolStripMenuItem11,
+            this.managementSellToolStripMenuItem,
             this.toolStripMenuItem1,
             this.setSelectedAsReadonlyToolStripMenuItem,
             this.setSelectedAsWritableToolStripMenuItem,
@@ -150,6 +152,13 @@ namespace Tester
             this.replaceToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.replaceToolStripMenuItem.Text = "&Replace [Ctrl+H]";
             this.replaceToolStripMenuItem.Click += new System.EventHandler(this.replaceToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(267, 22);
+            this.toolStripMenuItem11.Text = "Keywords";
+            this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -488,21 +497,17 @@ namespace Tester
             this.fctb.Text = resources.GetString("fctb.Text");
             this.fctb.Zoom = 100;
             this.fctb.TextChanged += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this.fctb_TextChanged);
+            this.fctb.SelectionChanged += new System.EventHandler(this.find_equal_selected_text);
             this.fctb.SelectionChangedDelayed += new System.EventHandler(this.fctb_SelectionChangedDelayed);
             this.fctb.AutoIndentNeeded += new System.EventHandler<FastColoredTextBoxNS.AutoIndentEventArgs>(this.fctb_AutoIndentNeeded);
             this.fctb.CustomAction += new System.EventHandler<FastColoredTextBoxNS.CustomActionEventArgs>(this.fctb_CustomAction);
-            /*this.fctb.MouseClick += new System.Windows.Forms.MouseEventHandler(this.find_equal_selected_text);
-            this.fctb.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.find_equal_selected_text);
-            this.fctb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.find_equal_selected_text);
-            this.fctb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.find_equal_selected_text);*/
-            this.fctb.SelectionChanged += new System.EventHandler(this.find_equal_selected_text);
             // 
-            // toolStripMenuItem11
+            // managementSellToolStripMenuItem
             // 
-            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(267, 22);
-            this.toolStripMenuItem11.Text = "Keywords";
-            this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
+            this.managementSellToolStripMenuItem.Name = "managementSellToolStripMenuItem";
+            this.managementSellToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            this.managementSellToolStripMenuItem.Text = "Management Selection Color";
+            this.managementSellToolStripMenuItem.Click += new System.EventHandler(this.managementSellToolStripMenuItem_Click);
             // 
             // PowerfulSample
             // 
@@ -574,6 +579,7 @@ namespace Tester
         private System.Windows.Forms.ToolStripMenuItem xmlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem jSONToolStripMenuItem;
         private ToolStripMenuItem toolStripMenuItem11;
+        private ToolStripMenuItem managementSellToolStripMenuItem;
     }
 }
 

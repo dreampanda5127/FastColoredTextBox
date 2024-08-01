@@ -93,7 +93,7 @@ namespace Tester
             {
                 try
                 {
-                    foreach (var sentenceRange in fctb.GetRanges(text, RegexOptions.None))
+                    foreach (var sentenceRange in fctb.GetRanges(text, RegexOptions.IgnoreCase))
                     {
                         sentenceRange.ClearStyle(StyleIndex.All);
                         sentenceRange.SetStyle(SelectedStyle);
@@ -493,6 +493,17 @@ namespace Tester
         private void toolStripMenuItem11_Click(object sender, EventArgs e)
         {
             fctb.ShowKeywordsDialog();
+        }
+
+        private void managementSellToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SelectionColor selectionColor = new SelectionColor(this);
+            selectionColor.Show();
+        }
+
+        public void setSelectionStyle(Color color)
+        {
+            this.SelectedStyle = new TextStyle(null, new SolidBrush(color), FontStyle.Regular);
         }
     }
 }

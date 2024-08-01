@@ -36,8 +36,17 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data" />
@@ -193,6 +202,12 @@
     </Compile>
     <Compile Include="LazyLoadingSample.Designer.cs">
       <DependentUpon>LazyLoadingSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionColor.Designer.cs">
+      <DependentUpon>SelectionColor.cs</DependentUpon>
     </Compile>
     <Compile Include="Sandbox.cs">
       <SubType>Form</SubType>
@@ -404,6 +419,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PowerfulCSharpEditor.resx">
       <DependentUpon>PowerfulCSharpEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionColor.resx">
+      <DependentUpon>SelectionColor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sandbox.resx">
       <DependentUpon>Sandbox.cs</DependentUpon>
